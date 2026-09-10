@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Robinson | Personal Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #60a5fa, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        .contact-link {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joel Robinson</h1>
+        <p class="subtitle">Software Engineer | Creative Technologist | Explorer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Joel Robinson. I'm passionate about building efficient, scalable, and user-friendly digital solutions. With a focus on cutting-edge technologies, I enjoy solving complex problems through code.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Cloud Architecture</li>
+                <li>AI/ML</li>
+                <li>Web Development</li>
+                <li>Data Engineering</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project Alpha</h3>
+                    <p>A revolutionary platform designed to streamline development workflows and improve productivity.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Beta</h3>
+                    <p>An intelligent data analysis engine that uncovers insights from massive datasets using ML.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Gamma</h3>
+                    <p>A real-time collaboration tool for distributed engineering teams.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in working together? Reach out via email or follow my work online.</p>
+            <p><a href="mailto:joel.robinson@example.com" class="contact-link">joel.robinson@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Joel Robinson. Built with passion.
+    </footer>
+</body>
+</html>
