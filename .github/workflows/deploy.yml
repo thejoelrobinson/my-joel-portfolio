@@ -1,11 +1,7 @@
 name: Deploy to GitHub Pages
 on:
   push:
-<<<<<<< HEAD
-    branches: ["main"]
-=======
     branches: ["main", "master"]
->>>>>>> master
 permissions:
   contents: read
   pages: write
@@ -27,8 +23,4 @@ jobs:
           path: .
       - name: Deploy to GitHub Pages
         id: deployment
-<<<<<<< HEAD
         uses: actions/deploy-pages
-=======
-        uses: actions/deploy-pages
->>>>>>> master
